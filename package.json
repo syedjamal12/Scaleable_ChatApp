@@ -11,6 +11,7 @@
     "prettier": "^3.2.5",
     "turbo": "^2.3.3",
     "typescript": "5.5.4"
+    
   },
   "engines": {
     "node": ">=18"
@@ -19,8 +20,5 @@
   "workspaces": [
     "apps/*",
     "packages/*"
-  ],
-  "dependencies": {
-    "dotenv": "^16.4.7"
-  }
+  ]
 }
