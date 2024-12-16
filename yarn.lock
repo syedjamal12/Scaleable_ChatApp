@@ -1086,6 +1086,11 @@ dot-case@^2.1.0:
   dependencies:
     no-case "^2.2.0"
 
+dotenv@^16.4.7:
+  version "16.4.7"
+  resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.4.7.tgz"
+  integrity sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==
+
 dotenv@16.0.3:
   version "16.0.3"
   resolved "https://registry.npmjs.org/dotenv/-/dotenv-16.0.3.tgz"
@@ -2989,6 +2994,7 @@ sentence-case@^2.1.0:
   version "1.0.0"
   resolved "file:apps/server"
   dependencies:
+    ioredis "^5.4.1"
     socket.io "^4.8.1"
 
 set-function-length@^1.2.2:
