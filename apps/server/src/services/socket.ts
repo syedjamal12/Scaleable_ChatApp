@@ -22,7 +22,15 @@ class SocketService {
             console.log("new socket conneted",socket.id)
           socket.on("event:message", async({message}:{message:string})=>{
             console.log("New Message Recieved",message)
+            //send msg in redis
+            await pub.publish("MESSAGES", JSON.stringify({message}));
           })
+        })
+        sub.on("message",(channel, message)=>{
+            if(channel=="MESSAGES")
+            {
+                this.io.emit("message",message);
+            }
         })
     }
 
@@ -36,6 +44,7 @@ class SocketService {
                 origin: "*"
             }
         });
+        sub.subscribe("MESSAGES")
     }
 
     get io(){
@@ -44,4 +53,3 @@ class SocketService {
 }
 
 export default SocketService;
-
