@@ -16,7 +16,7 @@ console.log("h")
       </div>
       {
         msgs.map((e)=>(
-          <li>{e}</li>
+          <li>{e}hello</li>
         ))
       }
     </div>
