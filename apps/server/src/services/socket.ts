@@ -3,10 +3,16 @@ import { Server } from "socket.io";
 import Redis from "ioredis";
 
 const pub = new Redis({
-    
+    host:"caching-39129b63-mdhasnat294-d59c.f.aivencloud.com",
+    port:14574,
+    username:"default",
+    password:"AVNS_OMHL3khZJo1hfRr4v1B"
 })
 const sub = new Redis({
-   
+    host:"caching-39129b63-mdhasnat294-d59c.f.aivencloud.com",
+    port:14574,
+    username:"default",
+    password:"AVNS_OMHL3khZJo1hfRr4v1B"
 })
 
 class SocketService {
