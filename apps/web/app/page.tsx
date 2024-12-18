@@ -6,7 +6,6 @@ import { useSocket } from "../context/SocketProvider"
 export default function Page(){
 const {sendMessage} = useSocket();
 const[message,setMessage]=useState('')
-
   return(
     <div>
       <div>
